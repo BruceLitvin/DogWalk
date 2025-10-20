@@ -6,7 +6,9 @@ public class DogWalkCompany {
     public DogWalkCompany() {
         schedule = new int[24];
     }
-
+public DogWalkCompany(int[]schedule){
+        this.schedule=schedule;
+}
     public String toString() {
         String s = "";
         for (int i = 0; i < schedule.length; i++)
@@ -31,13 +33,6 @@ public class DogWalkCompany {
     {
         schedule[hour] -=numberDogsWalked;
     }
-
-    /* public void updateDogsPos(int hour, int numberDogsWalked)
-    {
-        schedule[hour] +=numberDogsWalked;
-    }
-*/
-
 }
 
 
